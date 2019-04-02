@@ -1,0 +1,23 @@
+환경 설정
+virtualenv EVN
+django version 2.1.7
+python 3.5.2
+
+
+virtualenv env
+source env/bin/activate
+
+pip install django
+pip install djangorestframework
+pip install pygments  # We'll be using this for the code highlighting
+pip install httpie
+
+HTTPie 1.0.2
+Requests 2.19.1
+Pygments 2.3.1
+Python 3.5.2
+
+########
+http -a admin:1234 POST http://127.0.0.1:8000/snippets/ code="print(123)"
+http POST http://127.0.0.1:8000/snippets/ code="print(123)"
+
